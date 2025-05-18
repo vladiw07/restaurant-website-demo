@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import Logo from '../assets/Images/Logo.png';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,8 +13,8 @@ function Navbar() {
             {/* Logo */}
             <div className="flex-shrink-0">
               <img 
-                src={`${process.env.PUBLIC_URL}/images/Logo.png`} 
-                className="h-12 md:h-16 object-contain" 
+                src={Logo} 
+                className=" object-contain" 
                 alt="keithston logo" 
               />
             </div>

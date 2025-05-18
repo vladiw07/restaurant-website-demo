@@ -1,11 +1,12 @@
 import React from 'react';
+import heroImage from '../assets/Images/heroImage.png';
 
 function Hero() {
   return (
     <section
-      className="relative bg-cover bg-center text-white min-h-[500px] md:min-h-[813px] flex items-center"
+      className="relative bg-cover bg-center text-white min-h-[500px] md:min-h-[813px] flex items-center bg-gray-900"
       style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL}/images/HeroImage.webp)`,
+        backgroundImage: `url(${heroImage})`,
       }}
     >
       {/* Overlay */}
