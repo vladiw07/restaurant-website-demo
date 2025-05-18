@@ -4,7 +4,13 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}", // Adjust if needed
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+        sansita: ['"Sansita Swashed"', 'cursive']
+      },
+    }
   },
   plugins: [],
 }
