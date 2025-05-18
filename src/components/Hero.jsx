@@ -5,7 +5,7 @@ function Hero() {
     <section
       className="relative bg-cover bg-center text-white min-h-[500px] md:min-h-[813px] flex items-center"
       style={{
-        backgroundImage: `url(${process.env.PUBLIC_URL}/images/HeroImage.png)`,
+        backgroundImage: `url(${process.env.PUBLIC_URL}/images/HeroImage.webp)`,
       }}
     >
       {/* Overlay */}
