@@ -2,6 +2,15 @@
 
 A modern, responsive restaurant landing page built with **React** and **Tailwind CSS**. This landing page offers an elegant and interactive user experience, showcasing featured treats, top products, and more, all optimized for mobile-first responsiveness.
 
+
+---
+
+## 📝 Disclaimer
+
+This project is a **clone created for educational and practice purposes only**.  
+I do **not claim ownership** over the original design or idea. All rights belong to the original creators.
+
+
 ---
 
 ## 🔗 Live Demo
