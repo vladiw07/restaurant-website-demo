@@ -36,7 +36,7 @@ function Navbar() {
                 <img 
   src={Logo} 
   alt="keithston logo"
-  className="object-contain h-[70px] w-[50px] sm:h-[80px] sm:w-[60px] md:h-[99px] md:w-[67px]" 
+  className="object-contain h-[70px] w-[50px] sm:h-[60px] sm:w-[60px] md:h-[73px] md:w-[67px]" 
 />
               </div>
 

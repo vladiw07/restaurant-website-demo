@@ -20,7 +20,7 @@ function TopProducts() {
   ];
 
   return (
-    <section className="py-8 md:py-16 px-4 sm:px-6 lg:px-8 bg-[#F9F5F0]">
+    <section className="py-8 md:py-16 px-4 sm:px-6 lg:px-8 bg-white mb-20">
       <div className="max-w-7xl mx-auto">
         {/* Responsive heading */}
         <h2 className="text-[36px] md:text-[48px] lg:text-[64px] font-sansita font-bold text-center mb-12 md:mb-24 lg:mb-32 mt-6 md:mt-12 text-[#111111]">
