@@ -16,56 +16,43 @@ function TopProducts() {
     { id: 3, name: 'Blueberry Muffin', price: '$30', image: ProductImage3 },
     { id: 4, name: 'Cinnamon Roll', price: '$45', image: ProductImage4 },
     { id: 5, name: 'Chocolate Cake', price: '$60', image: ProductImage5 },
-    { id: 6, name: 'Bagel', price: '$25', image: ProductImage6 },    
+    { id: 6, name: 'Bagel', price: '$25', image: ProductImage6 },
   ];
 
   return (
     <section className="py-8 md:py-16 px-4 sm:px-6 lg:px-8 bg-white mb-20">
       <div className="max-w-7xl mx-auto">
-        {/* Responsive heading */}
         <h2 className="text-[36px] md:text-[48px] lg:text-[64px] font-sansita font-bold text-center mb-12 md:mb-24 lg:mb-32 mt-6 md:mt-12 text-[#111111]">
           Top Products
         </h2>
-        
-        {/* Responsive grid with centered items */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 justify-items-center">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {products.map((product) => (
-            <div 
+            <div
               key={product.id}
-              className="relative group rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 
-              h-[300px] w-[280px] md:h-[340px] md:w-[300px] lg:h-[380px] lg:w-[320px]"
+              className="relative flex flex-col rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 bg-cover bg-center h-[360px] w-full"
               style={{
                 backgroundImage: `url(${ProductBackgroundImage})`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center'
               }}
             >
-              {/* Product Image - responsive sizing */}
-              <div className="absolute top-6 md:top-8 left-0 right-0 flex justify-center">
-                <img 
-                  src={product.image} 
+              {/* Product Image */}
+              <div className="flex justify-center pt-6 flex-grow">
+                <img
+                  src={product.image}
                   alt={product.name}
-                  className="h-48 w-48 md:h-56 md:w-56 lg:h-60 lg:w-60 object-contain"
+                  className="h-52 w-52 sm:h-56 sm:w-56 object-contain"
                 />
               </div>
-              
-              {/* Product Info - responsive padding and text */}
-              <div className="relative h-full flex flex-col justify-end p-4 md:p-6">
-                <div className="flex justify-between items-end">
-                  <div>
-                    <div className="flex items-center">
-                      <span className="text-white font-semibold text-[18px] md:text-[20px] lg:text-[24px] font-inter mr-2">
-                        {product.price}
-                      </span>
-                      <button className="text-white hover:text-amber-300 transition-colors">
-                        <FiInfo size={16} className="md:w-5 lg:w-6" />
-                      </button>
-                    </div>
-                    <h3 className="text-white font-inter text-[18px] md:text-[20px] lg:text-[24px] font-medium mt-1 md:mt-2">
-                      {product.name}
-                    </h3>
-                  </div>
-                  <button className="bg-[#933C24] hover:bg-amber-600 text-white hover:text-white px-3 py-1 md:px-4 md:py-2 rounded-md font-medium font-inter text-[16px] md:text-[20px] lg:text-[24px] transition-colors duration-300">
+
+              {/* Product Info */}
+              <div className="w-full px-4 pb-4">
+                <div className="flex justify-between items-center text-white mb-1">
+                  <span className="text-lg font-semibold">{product.price}</span>
+                  <FiInfo className="text-white w-4 h-4 opacity-75" />
+                </div>
+                <div className="flex justify-between items-center">
+                  <h3 className="text-white text-[30px] mb-4 font-medium">{product.name}</h3>
+                  <button className="bg-[#933C24] hover:bg-amber-600 text-white px-4 py-1 rounded-md font-medium text-[20px] transition-colors duration-300">
                     Add
                   </button>
                 </div>

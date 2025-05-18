@@ -1,3 +1,6 @@
+import AboutUs from "./components/AboutUs";
+import FeaturedTreats from "./components/FeaturedTreats";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import ProductCategories from "./components/ProductCategories";
@@ -14,6 +17,9 @@ function App() {
     <TopProducts />
     <PromoBanner />
     <ProductCategories />
+    <AboutUs />
+    <FeaturedTreats />
+    <Footer />
 
 
     </div>
